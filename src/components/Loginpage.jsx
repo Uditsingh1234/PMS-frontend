@@ -25,11 +25,10 @@ function Loginpage({ onLogin }) {
     });
   };
 
-  const backendUrl = "https://pmsbackend-ten.vercel.app/"
 
   const login = () => {
-    // const backendUrl = import.meta.env.VITE_BACKEND_URL;
-    axios.post(`${backendUrl}/login`, user).then((res) => {
+    const backendUrl = import.meta.env.VITE_BACKEND_URL;
+    axios.post(`${backendUrl}login`, user).then((res) => {
       message.success(res.data.message, 2);
       if (res.data.user) {
         onLogin(res.data.user);
