@@ -1,0 +1,23 @@
+.sd-hh{
+    /* padding: 5px; */
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 500;
+    justify-content: end;
+    /* background-color: #256ed1; */
+    width: 100%;
+    
+}
+.sd-hh.active{
+    width: 98%;
+}
+
+.sd-h{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #256ed1;
+    width: 86%;
+    margin: 4px 7px;
+    border-radius: 10px;
+}

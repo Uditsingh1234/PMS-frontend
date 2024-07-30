@@ -1,0 +1,132 @@
+.icon {
+    margin: 3px;
+    padding: 4px 6px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    font-size: 10px;
+    display: none;
+    border-radius: 5px;
+    border: 1px solid #e8e8e8;
+}
+.icon svg {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+.icon:hover {
+    background-color: #e4b316;
+    /* padding: 0px 3px; */
+    color: #0d0d0d;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+
+.icon2{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    font-size: 10px;
+    margin: 3px;
+    padding: 4px 6px;
+    border-radius: 5px;
+    border: 1px solid #e8e8e8;
+}
+.icon2 svg {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+.icon2:hover {
+    background-color: #e4b316;
+    /* padding: 0px 3px; */
+    color: #0d0d0d;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+
+
+.logo {
+    height: 30px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.sidenav {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #e7edf6;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    padding: 10px 0px;
+    transition: left 0.3s ease;
+    left: -200px;
+    height: 100vh;
+}
+
+
+
+.sidenav ul {
+    color: #0d0d0d;
+    font-size: 1.2rem;
+    /* border: 1px solid black; */
+    padding: 10px;
+    font-weight: 500;
+    margin-bottom: 2px;
+    /* border-radius: 10px; */
+}
+
+.sidenav ul li {
+    cursor: pointer;
+}
+
+ul li a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+ul li a svg {
+    font-size: 25px;
+}
+
+.sidenav ul:hover,
+ul.active {
+    background-color: #e4b316;
+    color: black;
+}
+
+@media (min-width: 600px) {
+    .icon{
+        display: none;
+    }
+    .logo {
+        height: 30px;
+        margin-left: 10px;
+    }
+    .sidenav {
+        left: 0;
+    }
+}
+@media (max-width: 600px) {
+    .icon{
+        display: block;
+    }
+    .logo {
+        height: 30px;
+        margin-left: 80px;
+    }
+    .sidenav.active {
+        left: 0;
+    }
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////////// */
+
