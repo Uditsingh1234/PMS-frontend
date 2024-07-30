@@ -1,4 +1,3 @@
-// Loginpage.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
@@ -8,7 +7,8 @@ import Banner from './SRM-Banner2.jpg';
 import logoo from './SRMlogo.png';
 import './component.css';
 import { message } from "antd";
-
+import dotenv from 'dotenv';
+dotenv.config();
 function Loginpage({ onLogin }) {
   const [user, setUser] = useState({
     email: '',
@@ -26,7 +26,8 @@ function Loginpage({ onLogin }) {
   };
 
   const login = () => {
-    axios.post('http://localhost:9002/login', user).then((res) => {
+    const backendUrl = import.meta.env.VITE_BACKEND_URL;
+    axios.post(`${backendUrl}/login`, user).then((res) => {
       message.success(res.data.message, 2);
       if (res.data.user) {
         onLogin(res.data.user);
