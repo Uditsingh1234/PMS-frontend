@@ -7,8 +7,8 @@ import Banner from './SRM-Banner2.jpg';
 import logoo from './SRMlogo.png';
 import './component.css';
 import { message } from "antd";
-// import dotenv from 'dotenv';
-// dotenv.config();
+import dotenv from 'dotenv';
+dotenv.config();
 function Loginpage({ onLogin }) {
   const [user, setUser] = useState({
     email: '',
