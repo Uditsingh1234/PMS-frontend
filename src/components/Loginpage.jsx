@@ -28,7 +28,8 @@ function Loginpage({ onLogin }) {
 
   const login = () => {
     const backendUrl = import.meta.env.VITE_BACKEND_URL;
-    axios.post(`${backendUrl}login`, user).then((res) => {
+    console.log(backendUrl);
+    axios.post(`${backendUrl}/login`, user).then((res) => {
       message.success(res.data.message, 2);
       if (res.data.user) {
         onLogin(res.data.user);
