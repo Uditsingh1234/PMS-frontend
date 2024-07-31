@@ -7,8 +7,7 @@ import Banner from './SRM-Banner2.jpg';
 import logoo from './SRMlogo.png';
 import './component.css';
 import { message } from "antd";
-import dotenv from 'dotenv';
-dotenv.config();
+
 function Loginpage({ onLogin }) {
   const [user, setUser] = useState({
     email: '',
@@ -25,11 +24,8 @@ function Loginpage({ onLogin }) {
     });
   };
 
-
   const login = () => {
-    const backendUrl = import.meta.env.VITE_BACKEND_URL;
-    console.log(backendUrl);
-    axios.post(`${backendUrl}/login`, user).then((res) => {
+    axios.post('http://localhost:9002/login', user).then((res) => {
       message.success(res.data.message, 2);
       if (res.data.user) {
         onLogin(res.data.user);
