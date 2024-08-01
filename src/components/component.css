@@ -79,7 +79,7 @@
     align-items: center;
     width: 700px;
     background-color: #0c4da2;
-    height: 200px;
+    height: 150px;
     border-radius: 50% 50% 0 0/ 100% 100% 0 0;
 }
 
@@ -111,6 +111,7 @@
     justify-content: center;
     flex-direction: column;
     padding: 0 20px;
+    /* height: 50%; */
 }
 
 .lg-input p {
