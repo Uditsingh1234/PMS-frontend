@@ -235,7 +235,7 @@
     display: none;
 }
 .project-c h1{
-    margin-top: 10px;
+    margin-top: 5px;
     font-weight: 700;
     font-size: 1.1rem;
     display: flex;
@@ -246,12 +246,16 @@
 }
 .project-c h1 svg{
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: black;
 }
 .project-c h1 img{
     height: 98%;
     margin-right: 5px;
+}
+.project-c h1 span{
+    display: flex;
+    gap: 8px;
 }
 .project-c button{
     padding: 5px 10px;
@@ -280,4 +284,156 @@
 .p-btn h4 img{
     height: 25px;
     margin-left: 5px;
+}
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////// Project's page /////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+.project-pannel{
+    padding: 14px;
+}
+
+.p-search-section{
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color:  #6297dc53;
+}
+.p-filter{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.filter-search{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.filter-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.filter-section label{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-right: 10px;
+}
+.filter-section select{
+    font-size: 1rem;
+    font-weight: 600;
+    border: 1px solid #818a91;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    color: #818a91;
+}
+.filter-search button{
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    background-color: #e4b416af;
+}
+.filter-search button:hover{
+    background-color: #e4b316;
+}
+
+
+.p-search-section p{
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: red;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
+.id-search{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+.id-search input{
+    border: 1px solid #818a91;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.id-search button{
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+    background-color: #e4b416af;
+    font-weight: 600;
+}
+.id-search button:hover{
+    background-color: #e4b316;
+}
+
+@media (max-width:1050px) {
+    .p-filter{
+        flex-direction: column;
+        align-items: start;
+    }
+    .p-search-section p{
+        margin: 0;
+    }
+    .filter-section label{
+        font-size: 1rem;
+    }
+    .filter-section select{
+        font-size: 0.8rem;
+        padding: 2px 5px;
+    }
+    .filter-search button{
+        padding: 2px 5px;
+    }
+    .id-search{
+        margin-top: 10px;
+    }
+    .id-search input {
+        padding: 2px 5px;
+    }
+    .id-search button{
+        padding: 2px 5px;
+    }
+    .id-search p{
+        margin-left: 10px;
+    }
+}
+@media (max-width:750px) {
+    .project-pannel{
+        padding: 5px;
+    }
+    .filter-search{
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+    }
+}
+
+@media (max-width:450px){
+    .id-search{
+        padding-top: 5px;
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+        border-top: 1px solid black;
+    }
+    .id-search button{
+        margin: 0;
+    }
+    .id-search p{
+        margin: 0;
+    }
 }
