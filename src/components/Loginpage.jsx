@@ -25,7 +25,7 @@ function Loginpage({ onLogin }) {
   };
 
   const login = () => {
-    axios.post('http://localhost:9002/login', user).then((res) => {
+    axios.post('https://pms-backend-my5a.onrender.com/login', user).then((res) => {
       message.success(res.data.message, 2);
       if (res.data.user) {
         onLogin(res.data.user);

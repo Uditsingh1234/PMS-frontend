@@ -16,7 +16,7 @@ import axios from 'axios';
 function Admin_Dashboard({ show }) {
   const [projects, setProjects] = useState([]);
   const [projectDescriptions, setProjectDescriptions] = useState([]);
-
+  const navigate = useNavigate();
   const fetchProjects = async () => {
     const { data, error } = await supabase
       .from('projects')
@@ -52,7 +52,11 @@ function Admin_Dashboard({ show }) {
     return projectDesc ? projectDesc.desc : 'No description available.';
   };
 
-  const navigate = useNavigate();
+  const handleDetailsClick = (project, teamId) => {
+    const projectDescription = getProjectDescription(teamId);
+    navigate('/admin/projects', { state: { project, projectDescription } });
+  };
+
   const handleClick = () => {
     navigate('/admin/calender');
   };
@@ -83,7 +87,7 @@ function Admin_Dashboard({ show }) {
                     </span></h1>
                   <div className='p-btn'>
                     <h4><img src={waiting} alt="Vacant Seats" />Vacant Seats: <span>{project.vancant_seat}</span></h4>
-                    <button>Details</button>
+                    <button onClick={() => handleDetailsClick(project, project.team_id)}>Details</button>
                   </div>
                 </div>
               ))}
@@ -93,7 +97,7 @@ function Admin_Dashboard({ show }) {
             <div className='noti'>
               <Notify_Widget />
             </div>
-            <div className='caln' onClick={handleClick}>
+            <div className='caln' onClick={handleClick} >
               <CalendarWidget />
             </div>
           </div>
