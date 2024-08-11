@@ -98,7 +98,7 @@ function Loginpage({ onLogin }) {
           <div>
             <img src={logoo} alt="Logo" className="banner-logo" />
           </div>
-          <img src={Banner} alt="Banner" className="Banner1" />
+          {/* <img src={Banner} alt="Banner" className="Banner1" /> */}
           <div className="p-detail">
             <h1>Heading:</h1>
             <p>

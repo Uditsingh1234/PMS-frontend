@@ -78,7 +78,7 @@
 .lg-p1d {
     width: 700px;
     background-color: #0c4da2;
-    height: 650px;
+    height: 70%;
 
 }
 
@@ -88,7 +88,7 @@
     align-items: center;
     width: 700px;
     background-color: #0c4da2;
-    height: 160px;
+    height: 100px;
     border-radius: 50% 50% 0 0/ 100% 100% 0 0;
 }
 
