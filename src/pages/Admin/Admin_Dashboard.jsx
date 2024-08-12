@@ -94,7 +94,7 @@ function Admin_Dashboard({ show }) {
             </div>
           </div>
           <div className='Dashc2'>
-            <div className='noti'>
+            <div className='notification'>
               <Notify_Widget />
             </div>
             <div className='caln' onClick={handleClick} >
