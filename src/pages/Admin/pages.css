@@ -152,18 +152,18 @@
 }
 
 
-.noti {
+.notification {
     width: 100%;
-    background-color: #e7edf6;
     height: 50%;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffff;
 }
 
 .caln {
     width: 100%;
-    /* background-color: lightblue; */
     height: 50%;
-    /* border-radius: 20px; */
 }
 
 
@@ -180,6 +180,7 @@
     .Dashc2 {
         width: 100%;
     }
+    
 }
 
 
