@@ -1,6 +1,5 @@
 .login-main {
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     height: 100vh;
     background-color: #e7edf6;
@@ -19,7 +18,6 @@
     align-items: center;
     flex-direction: column;
     padding-top: 10px;
-    /* box-shadow: -1px -5px 200px rgb(0, 0, 0); */
 }
 
 .lg-div p {
@@ -57,7 +55,7 @@
 
 .lg-p1 {
     width: 100%;
-    height: 450px;
+    height: 500px;
     position: absolute;
     transition: 1s;
     display: flex;
@@ -68,8 +66,8 @@
 .lg-p1d {
     width: 700px;
     background-color: #0c4da2;
-    height: 500px;
-    
+    height: 450px;
+    /* padding-bottom: 70px; */
 }
 
 .lg-p1d1 {
@@ -78,7 +76,7 @@
     align-items: center;
     width: 700px;
     background-color: #0c4da2;
-    height: 200px;
+    height: 150px;
     border-radius: 50% 50% 0 0/ 100% 100% 0 0;
 }
 
@@ -187,6 +185,9 @@
     .p-detail{
         width: 70%;
         left: 15%;
+    }
+    .lg-p1d{
+        height: 500px;
     }
 }
 
