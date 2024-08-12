@@ -4,23 +4,23 @@ import notification from "./component_assests/push-notification.png"
 import medal from "./component_assests/medals.png"
 function Notify_Widget() {
   return (
-    <div className='N-main'>
+    <>
         <div className="noti">
             <div className="nmsg">
                 <ul>
-                    <li>Notification XXXXXXXXXXX</li>
+                    <li>Notification are show here</li>
                     <p>Time and Date</p>
                 </ul>
                 <ul>
-                    <li>Notification XXXXXXXXXXX</li>
+                    <li>Notification are show here</li>
                     <p>Time and Date</p>
                 </ul>
                 <ul>
-                    <li>Notification XXXXXXXXXXX</li>
+                    <li>Notification are show here</li>
                     <p>Time and Date</p>
                 </ul>
                 <ul>
-                    <li>Notification XXXXXXXXXXX</li>
+                    <li>Notification are show here</li>
                     <p>Time and Date</p>
                 </ul>
             </div>
@@ -42,7 +42,7 @@ function Notify_Widget() {
                 </ul>
             </div>
         </div>
-    </div>
+        </>
   )
 }
 
